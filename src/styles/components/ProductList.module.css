@@ -1,0 +1,330 @@
+/* src/styles/components/Products.module.css */
+
+/* Main product container */
+.productContainer {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+/* Title section */
+.productTitleContainer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.productTitleContainer h1 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Simplon Norm", Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #252020;
+  margin: 0;
+}
+
+.productTitleContainer p {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Simplon Norm", Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #252020;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+/* Filter bar */
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.filterOptions {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.itemsCount {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Simplon-Norm", Arial, sans-serif;
+  color: #252020;
+  margin: 0;
+}
+
+.filterToggleBtn {
+  color: #888792;
+  text-decoration: underline;
+  font-family: "Adobe Caslon Pro", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.filterToggleBtn:hover {
+  background-color: #f8f9fa;
+  color: #252020;
+  text-decoration: none;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.subFilter {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Simplon-Norm", Arial, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.subFilter:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subFilterOptions {
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Simplon-Norm", Arial, sans-serif;
+  color: #252020;
+  margin: 0;
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+  border: 1px solid #e5e5e5;
+}
+
+.subFilterOptions p {
+  cursor: pointer;
+  margin: 6px 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.subFilterOptions p:hover {
+  background-color: #252020;
+  color: #fff;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.selectedSubFilter {
+  font-weight: 700;
+  background-color: #f0f8ff !important;
+  color: #252020 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+}
+
+/* Main content area with sidebar */
+.productListMainContainer {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* no products found message */
+.noProductFound {
+  text-align: center;
+  margin: 0px auto 50px auto;
+}
+
+.noProductFound img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.noProductText {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+}
+
+.noProductFound button {
+  width: 200px;
+  height: 50px;
+  background-color: #252020;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Simplon-Norm", Arial, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/* Filter Mobile options container */
+.filterOptionsMobile {
+  display: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Simplon-Norm", Arial, sans-serif;
+  border-right: 1px solid rgb(11, 11, 11);
+  color: #252020;
+  text-align: center;
+  flex: 1;
+}
+
+/* Product list area */
+.productList {
+  flex: 1;
+}
+
+.productListContainer {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .productTitleContainer h1 {
+    font-size: 36px;
+  }
+
+  .productTitleContainer p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .filterContainer {
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .filterOptions {
+    justify-content: center;
+  }
+
+  .filterToggleBtn {
+    margin-left: 0;
+  }
+
+  .productListMainContainer {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .filterSidebar {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .productListContainer {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productTitleContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .productTitleContainer h1 {
+    font-size: 28px;
+  }
+
+  .productTitleContainer p {
+    font-size: 16px;
+  }
+
+  .filterContainer {
+    justify-content: space-around;
+    padding: 10px 15px;
+    border: 1px solid rgb(11,11,11);
+  }
+
+  .itemsCount,
+  .subFilter {
+    font-size: 16px;
+  }
+
+  .filterToggleBtn {
+    font-size: 14px;
+  }
+
+  .productListMainContainer {
+    padding: 0 15px;
+  }
+
+  .productListContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+
+  .filterOptions {
+    display: none;
+  }
+
+  .filterOptionsMobile {
+    display: block;
+  }
+}

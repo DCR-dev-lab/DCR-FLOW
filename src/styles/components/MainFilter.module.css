@@ -1,0 +1,283 @@
+/* Enhanced MainFilter CSS - Original theme with better animations */
+.mainFilterSidebar {
+    min-width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    animation: slideInRight 0.4s ease-out;
+}
+
+.mainFilterSidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #252020;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+
+/* Main Filter section container */
+.mainFilterSection {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.mainFilterSection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Main Filter title with toggle */
+.mainFilterTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.mainFilterTitle:hover {
+    background-color: #f8f9fa;
+}
+
+.mainFilterTitle:hover h4 {
+    color: #666;
+}
+
+.mainFilterSection h4 {
+    color: #252020;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Main Icon button */
+.mainFilterIconBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.mainFilterIconBtn:hover {
+    background-color: #252020;
+}
+
+.mainFilterIcon {
+    font-size: 18px;
+    color: #666;
+    transition: all 0.4s ease;
+}
+
+.mainFilterIconBtn:hover .mainFilterIcon {
+    color: #f5f5f5;
+
+}
+
+/* Main Selected filter display */
+.filterValue {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-style: italic;
+}
+
+/* Main Collapsible filter options */
+.mainFilterOptions {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+.mainFilterOptionsOpen {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 5px;
+    transform: translateY(0);
+}
+
+/* Main Unselect all button */
+.mainUnselectAll {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 12px;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 12px;
+    display: block;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.mainUnselectAll:hover {
+    color: #252020;
+    background-color: #f8f9fa;
+}
+
+/* Main Checkbox labels */
+.mainFilterCheckboxLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mainFilterCheckboxLabel:hover {
+    background-color: #f8f9fa;
+    color: #252020;
+    padding-left: 8px;
+    padding-right: 8px;
+    transform: translateX(2px);
+}
+
+.mainFilterCheckboxLabel:last-child {
+    margin-bottom: 0;
+}
+
+/* Main Custom checkbox styling */
+.mainFilterCheckboxLabel input[type='checkbox'] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mainFilterCheckboxLabel input[type='checkbox']:checked {
+    accent-color: #252020;
+}
+
+.mainFilterCheckboxLabel:hover input[type='checkbox'] {
+    transform: scale(1.1);
+}
+
+/* Main Selected label styling */
+.mainFilterCheckboxLabel:has(input:checked) {
+    color: #252020;
+    font-weight: 600;
+    background-color: #f0f8ff;
+}
+
+.mainFilterCheckboxLabel:has(input:checked):hover {
+    background-color: #e6f3ff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .mainFilterSidebar {
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mainFilterSidebar h3 {
+        font-size: 16px;
+    }
+
+    .mainFilterSection h4 {
+        font-size: 13px;
+    }
+
+    .mainFilterCheckboxLabel {
+        font-size: 13px;
+        padding: 6px 0;
+    }
+
+    .mainFilterOptionsOpen {
+        max-height: 250px;
+    }
+
+    .filterContainer {
+        padding: 15px 20px;
+    }
+
+    .subFilterOptions {
+        right: 20px;
+        top: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainFilterSidebar {
+        padding: 15px;
+    }
+
+    .mainFilterTitle {
+        margin-bottom: 6px;
+    }
+
+    .mainFilterCheckboxLabel {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .mainFilterIcon {
+        font-size: 16px;
+    }
+
+    .filterContainer {
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .filterOptions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .subFilterOptions {
+        right: 16px;
+        top: 50px;
+        left: 16px;
+        width: auto;
+    }
+}
+
+/* Enhanced slide in animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

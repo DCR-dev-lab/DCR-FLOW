@@ -1,0 +1,164 @@
+/* src/styles/components/Navigation.module.css */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #e5e5e5;
+    letter-spacing: 1px;
+    position: relative;
+}
+.navMainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 60px;
+}
+.logoContainer {
+    /* Give it a fixed width to balance with iconsContainer */
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hamburgerIcon {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.hamburgerIcon:hover {
+    transform: scale(1.1);
+}
+.titleContainer {
+    flex: 1;
+    text-align: center;
+    /* Add this to ensure perfect centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleContainer h1 {
+    font-weight: 800;
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+.iconsContainer {
+    display: flex;
+    gap: 16px;
+    font-size: 28px;
+    /* Give it a fixed width to balance with logoContainer */
+    min-width: 150px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon {
+    cursor: pointer;
+}
+.iconsContainer img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.navigationContainer {
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.navigationList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+    margin: 0;
+    padding: 0;
+}
+.navigationList li {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    color: #252020;
+    transition: 0.2s ease-in-out;
+}
+.navigationList li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.languageSelect {
+    font-size: 16px;
+    border: 0 none;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+/* Mobile styles remain the same */
+@media (max-width: 468px) {
+    .navMainContainer {
+        padding: 6px 12px;
+        justify-content: space-between;
+    }
+    .navigationContainer {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 1000;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .mobileMenuOpen {
+        max-height: 300px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .navigationList {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 20px 0 !important;
+        display: flex !important;
+    }
+    .titleContainer h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .logoContainer {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        /* Reset mobile widths */
+        min-width: auto;
+    }
+    .logoContainer img {
+        height: 20px;
+        width: 20px;
+    }
+    .iconsContainer {
+        gap: 6px;
+        font-size: 20px;
+        /* Reset mobile widths */
+        min-width: auto;
+    }
+    .iconsContainer img {
+        height: 20px;
+        width: 20px;
+    }
+    .iconUser {
+        display: none;
+    }
+    .hamburgerIcon {
+        display: block;
+        font-size: 24px;
+        height: 28px;
+    }
+    .languageSelect {
+        display: none;
+    }
+}

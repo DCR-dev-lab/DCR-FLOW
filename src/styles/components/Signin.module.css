@@ -1,0 +1,177 @@
+/* src/styles/components/Login.module.css */
+
+.loginWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aliceblue;
+  font-family: "Inter";
+}
+
+.loginContainer {
+  width: 500px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.loginLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loginLogo h2 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Inter";
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Inter";
+}
+
+.formGroup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Inter";
+  width: 100%;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Inter";
+  outline: none;
+}
+
+.signupLink {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  font-family: "Inter";
+}
+
+.signupLink a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-size: 14px;
+  text-align: left;
+}
+
+.btnLoaderContainer {
+  width: 100%;
+  height: 40px;
+  background: #000;
+  box-shadow: 1px 2px 4px rgba(16, 16, 16, 0.4);
+  border-radius: 5px;
+  cursor: disabled;
+  outline: none;
+  font-size: 16px;
+}
+
+.btnLoader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+
+    display: block;
+
+    background: #fff;
+    border-radius: 100%;
+
+    animation: 0.4s linear 0s infinite alternate btnLoader;
+
+    &:nth-child(1) {
+      animation-delay: 0;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes btnLoader {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    width: 80%;
+  }
+
+  .loginBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .signupLink {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .loginBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .signupLink {
+    font-size: 12px;
+  }
+
+  .btnLoaderContainer {
+    height: 35px;
+  }
+}

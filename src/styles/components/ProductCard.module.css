@@ -1,0 +1,159 @@
+/* src/styles/components/ProductCard.module.css */
+
+/* Product Card Styles */
+.productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    height: fit-content;
+}
+
+.productCard:hover {
+    transform: translateY(-4px);
+}
+
+/* Product image */
+.productCard img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* Product info container */
+.productInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Title */
+.productTitle {
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #252020;
+    margin: 0 0 8px 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Description */
+.productDescription {
+    color: #888792;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Price + Rating row */
+.productPriceRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Price */
+.productPrice {
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #252020;
+    margin: 0;
+}
+
+/* Rating */
+.productRating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Simplon-Norm', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #252020;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 0;
+}
+
+/* Read more functionality */
+.showContent {
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+.hideContent {
+    display: none;
+}
+
+/* Heart/Favorite icon */
+.productHeart {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.productHeart:hover {
+    color: #ff6b6b;
+}
+
+.productHeartActive {
+    color: #ff6b6b;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness for product cards */
+@media (max-width: 768px) {
+    .productCard img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .productTitle {
+        font-size: 16px;
+    }
+
+    .productDescription {
+        font-size: 13px;
+    }
+
+    .productPrice {
+        font-size: 14px;
+    }
+
+    .productRating {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+.noticeText {
+    color: #888792;
+    text-align: center;
+}
+
+.noticeLink {
+    color: #888792;
+}
