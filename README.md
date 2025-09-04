@@ -47,7 +47,7 @@ Open your browser
 Navigate to http://localhost:3000
 
 
-🚀 Deployment
+## 🚀 Deployment
 Vercel (Recommended)
 Push your code to GitHub
 
@@ -71,7 +71,7 @@ DigitalOcean App Platform
 
 Heroku (with proper configuration)
 
-🎨 Customization
+## 🎨 Customization
 Changing the Site Name
 Edit the site name in:
 
@@ -95,7 +95,7 @@ Update breakpoints for responsive design
 
 Customize animations and transitions
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 Fork the project
@@ -108,10 +108,8 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 FakeStore API for providing product data
 
 Next.js for an amazing framework
@@ -120,8 +118,6 @@ React Icons for beautiful icons
 
 Vercel for seamless deployment
 
-📞 Support
-If you have any questions or issues, please open an issue on GitHub or contact us at support@aura-collective.com.
 
 <div align="center">
 Made with ❤️ and Next.js
