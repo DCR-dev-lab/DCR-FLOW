@@ -1,4 +1,4 @@
-[# DCR FLOW - Modern E-commerce Platform
+# DCR FLOW - Modern E-commerce Platform
 
 A fully responsive, modern e-commerce platform built with Next.js, React, and modern web technologies. Features product listings, user authentication, advanced filtering, and a sleek UI.
 
@@ -126,4 +126,4 @@ If you have any questions or issues, please open an issue on GitHub or contact u
 <div align="center">
 Made with ❤️ and Next.js
 
-</div> ```](https://github.com/DCR-dev-lab/DCR-FLOW)
+</div> ```
