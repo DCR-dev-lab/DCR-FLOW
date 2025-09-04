@@ -6,7 +6,7 @@ A fully responsive, modern e-commerce platform built with Next.js, React, and mo
 
 ## 🚀 Live Demo
 
-[View Live Site](https://aura-collective.vercel.app/) *(Replace with your actual deployment URL)*
+[View Live Site](https://dcr-flow.vercel.app)
 
 ## ✨ Features
 
