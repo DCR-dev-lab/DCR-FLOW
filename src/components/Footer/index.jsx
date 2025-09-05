@@ -59,7 +59,7 @@ const Footer = () => {
             <h4>Currency</h4>
             <div className={styles.currencySelector}>
               <img
-                src="/usa.png"
+                src="./usa.png"
                 alt="US Flag"
                 className={styles.currencyFlag}
               />
