@@ -109,7 +109,7 @@ const Signin = () => {
         <div className={styles.loginWrapper}>
             <div className={styles.loginContainer}>
                 <div className={styles.loginLogo}>
-                    <img src="./logo.png" alt="Logo" />
+                    <img src="/flowLogo.png" alt="Logo" />
                     <h2>DCR FLOW</h2>
                 </div>
                 <form onSubmit={onLoginSubmit}>

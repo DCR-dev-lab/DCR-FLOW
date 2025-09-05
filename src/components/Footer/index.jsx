@@ -59,7 +59,7 @@ const Footer = () => {
             <h4>Currency</h4>
             <div className={styles.currencySelector}>
               <img
-                src="./usa.png"
+                src="/usa.png"
                 alt="US Flag"
                 className={styles.currencyFlag}
               />
@@ -164,22 +164,22 @@ const Footer = () => {
             <h4>DCR FLOW Accepts</h4>
             <div className={styles.paymentIcons}>
               <div className={styles.paymentIcon}>
-                <img src="./googlePay.png" alt="Google Pay" />
+                <img src="/googlePay.png" alt="Google Pay" />
               </div>
               <div className={styles.paymentIcon}>
-                <img src="./mastercard.png" alt="Mastercard" />
+                <img src="/mastercard.png" alt="Mastercard" />
               </div>
               <div className={styles.paymentIcon}>
-                <img src="./paypal.png" alt="PayPal" />
+                <img src="/paypal.png" alt="PayPal" />
               </div>
               <div className={styles.paymentIcon}>
-                <img src="./applePay.png" alt="Apple Pay" />
+                <img src="/applePay.png" alt="Apple Pay" />
               </div>
               <div className={styles.paymentIcon}>
-                <img src="./amex.png" alt="American Express" />
+                <img src="/amex.png" alt="American Express" />
               </div>
               <div className={styles.paymentIcon}>
-                <img src="./shopPay.png" alt="Shop Pay" />
+                <img src="/shopPay.png" alt="Shop Pay" />
               </div>
             </div>
           </div>
