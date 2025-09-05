@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from 'next/link';
 import bcrypt from "bcryptjs"; // Import bcrypt
-import logo from '../../../public/logo.png';
 import styles from '../../styles/components/Signin.module.css';
 
 const Signin = () => {
