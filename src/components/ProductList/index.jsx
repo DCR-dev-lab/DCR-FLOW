@@ -88,7 +88,7 @@ const ProductList = ({ serverProducts }) => {
                     ) : // Show actual products
                         finalFilteredPoductslist.length === 0 ? (
                             <div className={styles.noProductFound}>
-                                <img src="./noProductFound.png" alt="No Product Found" />
+                                <img src="/noProductFound.png" alt="No Product Found" />
                                 <p className={styles.noProductText}>
                                     Try adjusting your search or filter to find what you’re
                                     looking for.

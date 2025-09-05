@@ -97,7 +97,7 @@
     outline: none;
 }
 /* Mobile styles remain the same */
-@media (max-width: 468px) {
+@media (max-width: 576px) {
     .navMainContainer {
         padding: 6px 12px;
         justify-content: space-between;
