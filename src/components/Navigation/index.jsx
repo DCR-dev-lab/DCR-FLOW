@@ -28,7 +28,7 @@ const Navigation = () => {
             {isMenuOpen ? <IoClose /> : <RxHamburgerMenu />}
           </div>
           <Link href="/">
-            <img src="./logo.png" alt="logo" />
+            <img src="/flowLogo.png" alt="logo" />
           </Link>
         </div>
         <div className={styles.titleContainer}>
